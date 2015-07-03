@@ -35,6 +35,10 @@ b, strong {
   font-style: italic;
 }
 
+tc {
+  text-align: center;
+}
+
 header {
   position: absolute;
   z-index: 9999;
@@ -52,7 +56,7 @@ nav {
   z-index: 9999;
   padding: 8px 0;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 img.logo {
@@ -86,6 +90,7 @@ p small {
 
 a {
   color: #bbb;
+  word-wrap: break-word;
 }
 
 a:hover {
@@ -126,7 +131,7 @@ a:hover {
 }
 
 #accommodations {
-  background: #000 url('Accomodations.jpg') no-repeat center right fixed;
+  background: #000 url('Accomodations.jpg') no-repeat bottom right fixed;
 }
 
 
@@ -134,15 +139,13 @@ a:hover {
   .std {
     font-size: 18px;
   }
-  
-  .sub {
-    margin-bottom: 15%;
-  }
-  
 }
 @media screen and (max-width: 540px) {
-  .std {
-    font-size: 13px;
+  .bullet {
+    display: block;
+  }
+  .std .row {
+    margin-bottom: 30px;
   }
 }
 
@@ -160,7 +163,7 @@ a:hover {
 }
 
 .flexslider .slides li {
-  overflow-y: scroll
+  overflow-y: auto;
 }
 
 .flex-control-nav {
