@@ -25,14 +25,15 @@
               <p class="row">Save the Date <span class="bullet">&bull;</span> May 14, 2016</p>
               <p>Canada Agriculture and Food Museum</p>
               <p><small>Ottawa, Ontario, Canada</small></p>
+              <p><a href="http://ahrenandkarmela.com/#rsvp" id="rsvp-link">RSVP HERE</a></p>
             </div>
           </div>
         </li>
         <li id="rsvp" class="item">
           <div class="item-wrapper">
-            <div class="content">
+            
               <script type="text/javascript" src="http://app.rsvpify.com/embed/66"></script><script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script><script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
-            </div>
+            
           </div>
         </li>
         <li id="registry" class="item">
@@ -52,6 +53,7 @@
                 <a href="http://www.ikea.com/ms/en_CA/customer_service/ikea_services/gift_certificates/gift_cert.html?icid=en_CA-HS-GC-LP" target="_blank"><img src="IKEA.png"></a>
                 <a href="https://www.homedepot.ca/en/home/categories/all/gift-cards.html?redir=s&eid=PS_GO%7cHD+%7C+Corporate%7cHD+%7C+Corporate+%7C+G+%7C+Home+Depot%7cHD%7CGift-Card%7CPhrase%7chome+depot+gift&gclid=Cj0KEQiAtri0BRDLoaCF95e7o_sBEiQA_pgRQ0Kumljecdg0qFC8K4u9bzsVK-DBCNzJm21vli9LBWcaAu3i8P8HAQ" target="_blank"><img src="Home-Depot.png"></a>
               </p>
+              <p><sup>For USA/international guests: please note that we will not be able to use gift cards that have been purchased outside Canada. However, gift cards purchased from the retailer's Canadian website will be usable.</sup></p>
             </div>
           </div>
         </li>
@@ -90,6 +92,7 @@
     </nav>
   </body>
   <script>
+  
   $(window).load(function() {
   // create a variable to store the slide index to start at.
      startAtSlideIndex = 0;
@@ -131,6 +134,10 @@
         directionNav: false,
         startAt: startAtSlideIndex
       });
+    });
+    $('a#rsvp-link').click(function () {
+      $('.flexslider').flexslider(1);
+      return false;
     });
   </script>
 </html> a

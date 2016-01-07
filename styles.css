@@ -156,6 +156,12 @@ hr {
   margin-bottom: 40px;
 }
 
+#rsvp-link {
+  text-decoration: none;
+  border-bottom: 3px solid #bbb;
+  padding-bottom: 5px;
+}
+
 #accommodations {
   background: #000 url('Accomodations.jpg') no-repeat bottom right fixed;
 }
