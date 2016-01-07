@@ -28,38 +28,64 @@
             </div>
           </div>
         </li>
-        <li id="accommodations" class="item">
+        <li id="rsvp" class="item">
           <div class="item-wrapper">
             <div class="content">
-              <p>A block of rooms has been reserved at the <a href="http://www.sheratonottawa.com/" target="_blank">Sheraton Ottawa Hotel</a> at a rate of $149 - $159 CAD per night. Please reference the <strong>Arocena &amp; Koch</strong> wedding when reserving your room.</p>
-              <p>You can reserve by calling <strong>613-238-500</strong> or <strong>1-800-489-8333</strong> (toll free). </p>
-              <p>You can also reserve online by visiting the following link<br>
-              <a href="https://www.starwoodmeeting.com/Book/ak" target="_blank">https://www.starwoodmeeting.com/Book/ak</a></p> 
-              <p>Please book by <strong>April 12, 2016</strong> to secure this rate.</p>
+              <script type="text/javascript" src="http://app.rsvpify.com/embed/66"></script><script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script><script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
             </div>
           </div>
         </li>
-        <!--<div id="our-story" class="item">
+        <li id="registry" class="item">
           <div class="item-wrapper">
-            our story
+            <div class="content">
+              <p>
+                If you would like to help us start our new life together, we have registered for items at <a href="https://www.bedbathandbeyond.ca/store/giftregistry/view_registry_guest.jsp?registryId=542902692&eventType=Wedding" target="_blank">Bed Bath &amp; Beyond</a>.
+              </p>
+              <p class="img">
+                <a href="https://www.bedbathandbeyond.ca/store/giftregistry/view_registry_guest.jsp?registryId=542902692&eventType=Wedding" target="_blank"><img src="bbb.png"></a>
+              </p>
+              <hr />
+              <p>
+                Gift cards to <a href="http://www.ikea.com/ms/en_CA/customer_service/ikea_services/gift_certificates/gift_cert.html?icid=en_CA-HS-GC-LP" target="_blank">IKEA</a> and <a href="https://www.homedepot.ca/en/home/categories/all/gift-cards.html?redir=s&eid=PS_GO%7cHD+%7C+Corporate%7cHD+%7C+Corporate+%7C+G+%7C+Home+Depot%7cHD%7CGift-Card%7CPhrase%7chome+depot+gift&gclid=Cj0KEQiAtri0BRDLoaCF95e7o_sBEiQA_pgRQ0Kumljecdg0qFC8K4u9bzsVK-DBCNzJm21vli9LBWcaAu3i8P8HAQ" target="_blank">Home Depot</a> are also greatly appreciated.
+              </p>
+              <p class="img">
+                <a href="http://www.ikea.com/ms/en_CA/customer_service/ikea_services/gift_certificates/gift_cert.html?icid=en_CA-HS-GC-LP" target="_blank"><img src="IKEA.png"></a>
+                <a href="https://www.homedepot.ca/en/home/categories/all/gift-cards.html?redir=s&eid=PS_GO%7cHD+%7C+Corporate%7cHD+%7C+Corporate+%7C+G+%7C+Home+Depot%7cHD%7CGift-Card%7CPhrase%7chome+depot+gift&gclid=Cj0KEQiAtri0BRDLoaCF95e7o_sBEiQA_pgRQ0Kumljecdg0qFC8K4u9bzsVK-DBCNzJm21vli9LBWcaAu3i8P8HAQ" target="_blank"><img src="Home-Depot.png"></a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div id="rsvp" class="item">
-          <div class="item-wrapper">
-            rsvp
-          </div>
-        </div>
-        <div id="registry" class="item">
-          <div class="item-wrapper">
-            registry
-          </div>
-        </div>-->
+        </li>
       </li>
+      <li id="accommodations" class="item">
+        <div class="item-wrapper">
+          <div class="content">
+            <p>A block of rooms has been reserved at the <a href="http://www.sheratonottawa.com/" target="_blank">Sheraton Ottawa Hotel</a> at a rate of $149 - $159 CAD per night. Please reference the <strong>Arocena &amp; Koch</strong> wedding when reserving your room.</p>
+            <p>You can reserve by calling <strong>613-238-500</strong> or <strong>1-800-489-8333</strong> (toll free). </p>
+            <p>You can also reserve online by visiting the following link<br>
+            <a href="https://www.starwoodmeeting.com/Book/ak" target="_blank">https://www.starwoodmeeting.com/Book/ak</a></p> 
+            <p>Please book by <strong>April 12, 2016</strong> to secure this rate.</p>
+          </div>
+        </div>
+      </li>
+      <!--<li id="location" class="item">
+        <div class="item-wrapper">
+          our story
+        </div>
+      </li>-->
+      <!--<li id="our-story" class="item">
+        <div class="item-wrapper">
+          our story
+        </div>
+      </li>-->
     </div>
     <nav class="flexslider-controls clearfix">
       <ol class="flex-control-nav">
         <li>Home</li>
+        <li>RSVP</li>
+        <li>Registry</li>
         <li>Accommodations</li>
+        <!--<li>Location</li>
+        <li>Our Story</li>-->
       </ol>
     </nav>
   </body>
@@ -74,9 +100,21 @@
          case "#home":
            startAtSlideIndex = 0;
            break;
-         case "#accommodations":
+         case "#rsvp":
            startAtSlideIndex = 1;
            break;
+         case "#registry":
+           startAtSlideIndex = 2;
+           break;
+         case "#accommodations":
+           startAtSlideIndex = 3;
+           break;
+         /*case "#location":
+           startAtSlideIndex = 4;
+           break;
+         case "#our-story":
+           startAtSlideIndex = 5;
+           break;*/
        }
      }  
       $('.flexslider').flexslider( {
@@ -84,7 +122,7 @@
           // get the ID of the slide we are animating to
           id = slider.slides[slider.animatingTo].id 
           // set the URL path to #slideID     
-          history.pushState(null, null, "#" + id);
+          window.location.hash = id;
         },
         slideshow: false,
         animation: "fade",
