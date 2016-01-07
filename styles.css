@@ -163,11 +163,11 @@ hr {
 }
 
 #accommodations {
-  background: #000 url('Accomodations.jpg') no-repeat bottom right fixed;
+  background: #000 url('Accomodations.jpg') no-repeat bottom right;
 }
 
 #registry {
-  background: #000 url('Registry.jpg') no-repeat bottom center fixed;
+  background: #000 url('Registry.jpg') no-repeat bottom center;
 }
 
 #rsvp {
@@ -175,11 +175,11 @@ hr {
 }
 
 #location {
-  background: #000 url('Location.jpg') no-repeat bottom center fixed;
+  background: #000 url('Location.jpg') no-repeat bottom center;
 }
 
 #our-story {
-  background: #000 url('Our-Story.jpg') no-repeat bottom left fixed;
+  background: #000 url('Our-Story.jpg') no-repeat bottom left;
 }
 
 
