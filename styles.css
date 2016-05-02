@@ -97,14 +97,6 @@ a:hover {
   color: #ececec;
 }
 
-ul.slides li {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-}
-
 #home {
   text-align: center;
   background: #000 url('Home.jpg') no-repeat center center fixed;
@@ -182,6 +174,13 @@ hr {
   background: #000 url('Our-Story.jpg') no-repeat bottom left;
 }
 
+ul.slides li {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
 
 @media screen and (max-width: 860px) {
   .std {
@@ -231,4 +230,9 @@ hr {
 
 .flex-control-nav li.flex-active {
   opacity: 1;
+}
+
+.content ul > li {
+  list-style-type: disc;
+  list-style-position: inside;
 }

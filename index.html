@@ -22,18 +22,43 @@
         <li id="home" class="item">
           <div class="item-wrapper">
             <div class="content std">
-              <p class="row">Save the Date <span class="bullet">&bull;</span> May 14, 2016</p>
+              <p class="row">May 14, 2016 <span class="bullet">&bull;</span> 3:00 PM</p>
               <p>Canada Agriculture and Food Museum</p>
               <p><small>Ottawa, Ontario, Canada</small></p>
-              <p><a href="http://ahrenandkarmela.com/#rsvp" id="rsvp-link">RSVP HERE</a></p>
+              <p>
+                <a href="http://ahrenandkarmela.com/#rsvp" id="rsvp-link">Location &amp; Directions</a>
+              </p>
             </div>
           </div>
         </li>
-        <li id="rsvp" class="item">
+        <li id="location" class="item">
           <div class="item-wrapper">
-              <script type="text/javascript" src="http://app.rsvpify.com/embed/66"></script><script type="text/javascript" src="http://app.rsvpify.com/js/iframeResizer.min.js"></script><script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
-            <div class="content" style="display: block;">
-              <p>If you're having trouble RSVPing using the above form, email <a href="mailto:karmela.arocena@gmail.com?cc=elementslayer@gmail.com&subject=Wedding%20RSVP%20Question">karmela.arocena@gmail.com</a>.</p>
+            <div class="content">
+              <h3>Location</h3>
+              <p>Canada Agriculture and Food Museum<br/>901 Prince of Wales Drive</p>
+              <p>
+                <b>Ceremony:</b> The Meadow (Three Sisters Hall if it rains)<br>
+                <b>Reception &amp; Cocktail Hour:</b> The Cereal Barn
+              </p>
+              <p>
+                <img src="map.png">
+              </p>
+              <h3>Directions</h3>
+              <p>
+              <b>From Dow's Lake:</b>
+                <ul>
+                  <li>Travelling South on Prince of Wales Dr., at the Prince of Wales traffic circle --- take the second exit to continue on Prince of Wales Dr.</li>
+                  <li>Turn right at the Canada Agriculture and Food Museum parking lot (there is a large museum sign on the right side of the street)</li>
+                  <li>If you see Baseline Rd. you have gone too far</li>
+                </ul>
+              </p>
+              <p>
+              <b>From Baseline Rd.:</b>
+                <ul>
+                  <li>Travel North on Prince of Wales Dr. (if you come to the roundabout you have gone too far)</li>
+                  <li>Turn left at the Canada Agriculture and Food Museum parking lot (there is a large museum sign on the left side of the street)</li>
+                </ul>
+              </p>
             </div>
           </div>
         </li>
@@ -84,7 +109,7 @@
     <nav class="flexslider-controls clearfix">
       <ol class="flex-control-nav">
         <li>Home</li>
-        <li>RSVP</li>
+        <li>Location &amp; Directions</li>
         <li>Registry</li>
         <li>Accommodations</li>
         <!--<li>Location</li>
@@ -104,7 +129,7 @@
          case "#home":
            startAtSlideIndex = 0;
            break;
-         case "#rsvp":
+         case "#location":
            startAtSlideIndex = 1;
            break;
          case "#registry":
